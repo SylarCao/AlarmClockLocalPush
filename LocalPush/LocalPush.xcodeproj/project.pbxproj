@@ -20,6 +20,10 @@
 		2C6EBC341D4B4923009E4290 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC2D1D4B4923009E4290 /* icon80.png */; };
 		2C6EBC351D4B4923009E4290 /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC2E1D4B4923009E4290 /* icon87.png */; };
 		2C6EBC361D4B4923009E4290 /* nnn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC2F1D4B4923009E4290 /* nnn.jpg */; };
+		2C6EBC391D4B523A009E4290 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC381D4B523A009E4290 /* beep.mp3 */; };
+		2C6EBC3B1D4B5429009E4290 /* dog1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC3A1D4B5429009E4290 /* dog1.mp3 */; };
+		2C6EBC3E1D4B5647009E4290 /* buluke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC3C1D4B5647009E4290 /* buluke.mp3 */; };
+		2C6EBC3F1D4B5647009E4290 /* dianhuachong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EBC3D1D4B5647009E4290 /* dianhuachong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		2C6EBC2D1D4B4923009E4290 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		2C6EBC2E1D4B4923009E4290 /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
 		2C6EBC2F1D4B4923009E4290 /* nnn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nnn.jpg; sourceTree = "<group>"; };
+		2C6EBC381D4B523A009E4290 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		2C6EBC3A1D4B5429009E4290 /* dog1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog1.mp3; sourceTree = "<group>"; };
+		2C6EBC3C1D4B5647009E4290 /* buluke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buluke.mp3; sourceTree = "<group>"; };
+		2C6EBC3D1D4B5647009E4290 /* dianhuachong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dianhuachong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 		2C6EBC271D4B4923009E4290 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				2C6EBC371D4B523A009E4290 /* sound */,
 				2C6EBC281D4B4923009E4290 /* icon */,
 			);
 			path = resource;
@@ -122,6 +131,17 @@
 				2C6EBC2F1D4B4923009E4290 /* nnn.jpg */,
 			);
 			path = icon;
+			sourceTree = "<group>";
+		};
+		2C6EBC371D4B523A009E4290 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				2C6EBC3C1D4B5647009E4290 /* buluke.mp3 */,
+				2C6EBC3D1D4B5647009E4290 /* dianhuachong.mp3 */,
+				2C6EBC3A1D4B5429009E4290 /* dog1.mp3 */,
+				2C6EBC381D4B523A009E4290 /* beep.mp3 */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6EBC331D4B4923009E4290 /* icon58.png in Resources */,
+				2C6EBC3F1D4B5647009E4290 /* dianhuachong.mp3 in Resources */,
 				2C6EBC1F1D4B4640009E4290 /* LaunchScreen.storyboard in Resources */,
+				2C6EBC391D4B523A009E4290 /* beep.mp3 in Resources */,
 				2C6EBC311D4B4923009E4290 /* icon120.png in Resources */,
 				2C6EBC321D4B4923009E4290 /* icon180.png in Resources */,
+				2C6EBC3B1D4B5429009E4290 /* dog1.mp3 in Resources */,
+				2C6EBC3E1D4B5647009E4290 /* buluke.mp3 in Resources */,
 				2C6EBC351D4B4923009E4290 /* icon87.png in Resources */,
 				2C6EBC301D4B4923009E4290 /* icon0.png in Resources */,
 				2C6EBC361D4B4923009E4290 /* nnn.jpg in Resources */,

@@ -23,7 +23,7 @@
 {
     NSLog(@"btn1");
     
-    [self fun1];
+//    [self fun1];
 }
 
 - (void)fun1
@@ -34,7 +34,8 @@
     UILocalNotification *ll = [[UILocalNotification alloc] init];
     ll.fireDate = [self getDate1300];
 //    ll.applicationIconBadgeNumber = 1;
-    ll.soundName = UILocalNotificationDefaultSoundName;
+//    ll.soundName = UILocalNotificationDefaultSoundName;
+    ll.soundName = @"dianhuachong.mp3";
     ll.alertBody = @"body";
     ll.repeatInterval = NSCalendarUnitWeekday;
     [[UIApplication sharedApplication] scheduleLocalNotification:ll];
@@ -43,7 +44,7 @@
 
 - (NSDate *)getDate1300
 {
-    NSString *ss = @"16:51:00";
+    NSString *ss = @"13:13:13";
     NSDateFormatter *ff = [[NSDateFormatter alloc] init];
     ff.dateFormat = @"HH:mm:ss";
     NSDate *rt = [ff dateFromString:ss];
