@@ -22,30 +22,30 @@
 - (IBAction)btn1:(id)sender
 {
     NSLog(@"btn1");
+    
+    [self fun1];
 }
 
 - (void)fun1
 {
+    // remove all
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
     UILocalNotification *ll = [[UILocalNotification alloc] init];
     ll.fireDate = [self getDate1300];
-//    ll.applicationIconBadgeNumber = [[ReminderHelper Share] GetBadgeNumber]+1;
+//    ll.applicationIconBadgeNumber = 1;
     ll.soundName = UILocalNotificationDefaultSoundName;
     ll.alertBody = @"body";
     ll.repeatInterval = NSCalendarUnitWeekday;
-//    ll.userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-//                   m_title.text,   kReminderTitle,
-//                   m_content.text, kReminderContent,
-//                   @"0",           kReminderDone,
-//                   nil];
     [[UIApplication sharedApplication] scheduleLocalNotification:ll];
 }
 
 
 - (NSDate *)getDate1300
 {
-    NSString *ss = @"16:41";
+    NSString *ss = @"16:51:00";
     NSDateFormatter *ff = [[NSDateFormatter alloc] init];
-    ff.dateFormat = @"HH:mm";
+    ff.dateFormat = @"HH:mm:ss";
     NSDate *rt = [ff dateFromString:ss];
     return rt;
     
