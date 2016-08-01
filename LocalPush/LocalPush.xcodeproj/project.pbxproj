@@ -376,6 +376,7 @@
 				2C6EBC251D4B4640009E4290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
