@@ -44,7 +44,7 @@
 
 - (NSDate *)getDate1300
 {
-    NSString *ss = @"13:13:13";
+    NSString *ss = @"13:07:04";
     NSDateFormatter *ff = [[NSDateFormatter alloc] init];
     ff.dateFormat = @"HH:mm:ss";
     NSDate *rt = [ff dateFromString:ss];
