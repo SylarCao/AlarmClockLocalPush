@@ -19,8 +19,8 @@
     // Override point for customization after application launch.
     
     // local push
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound categories:nil];
-    [application registerUserNotificationSettings:settings];
+//    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound categories:nil];
+//    [application registerUserNotificationSettings:settings];
     
     
     return YES;

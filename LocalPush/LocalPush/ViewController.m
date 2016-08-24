@@ -41,9 +41,24 @@
 
 - (IBAction)btn1:(id)sender
 {
-    NSLog(@"btn1");
+    NSLog(@"btn2");
     
-    [self fun1];
+//    [self fun1];
+    
+//    [self fun2];
+}
+
+- (void)fun2
+{
+    // remove all
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    UILocalNotification *ll = [[UILocalNotification alloc] init];
+    ll.fireDate = [self getDate1400];
+//    ll.soundName = @"dianhuachong.mp3";
+    ll.alertBody = @"body";
+    ll.repeatInterval = NSCalendarUnitWeekday;
+    [[UIApplication sharedApplication] scheduleLocalNotification:ll];
 }
 
 - (void)fun1
@@ -60,9 +75,20 @@
 }
 
 
+- (NSDate *)getDate1400
+{
+    NSString *ss = @"15:06:40";
+    NSDateFormatter *ff = [[NSDateFormatter alloc] init];
+    ff.dateFormat = @"HH:mm:ss";
+    NSDate *rt = [ff dateFromString:ss];
+    return rt;
+    
+}
+
+
 - (NSDate *)getDate1300
 {
-    NSString *ss = @"13:07:04";
+    NSString *ss = @"13:08:06";
     NSDateFormatter *ff = [[NSDateFormatter alloc] init];
     ff.dateFormat = @"HH:mm:ss";
     NSDate *rt = [ff dateFromString:ss];
