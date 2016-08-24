@@ -10,6 +10,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface ViewController ()
 
+@property (nonatomic, weak) IBOutlet UIButton *btnOne;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ViewController
@@ -17,13 +19,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setInitialValue];
+}
+
+- (void)setInitialValue
+{
+    NSDateFormatter *ff = [[NSDateFormatter alloc] init];
+    ff.dateFormat = @"yyyy-MM-dd HH:mm";
+    NSDate *d1 = [ff dateFromString:@"2016-08-24 09:39"];
+    NSComparisonResult result = [d1 compare:[NSDate date]];
+    if (result == NSOrderedAscending)
+    {
+        _btnOne.hidden = YES;
+    }
+    else
+    {
+        _btnOne.hidden = NO;
+    }
 }
 
 - (IBAction)btn1:(id)sender
 {
     NSLog(@"btn1");
     
-//    [self fun1];
+    [self fun1];
 }
 
 - (void)fun1
@@ -33,8 +53,6 @@
     
     UILocalNotification *ll = [[UILocalNotification alloc] init];
     ll.fireDate = [self getDate1300];
-//    ll.applicationIconBadgeNumber = 1;
-//    ll.soundName = UILocalNotificationDefaultSoundName;
     ll.soundName = @"dianhuachong.mp3";
     ll.alertBody = @"body";
     ll.repeatInterval = NSCalendarUnitWeekday;

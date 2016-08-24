@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWG-jX-gh0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWG-jX-gh0">
                                 <rect key="frame" x="285" y="244" width="30" height="30"/>
                                 <state key="normal" title="btn1"/>
                                 <connections>
@@ -39,9 +39,13 @@
                             <constraint firstItem="YWG-jX-gh0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X4L-gQ-FJL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOne" destination="YWG-jX-gh0" id="GA4-tO-7PN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="496" y="296"/>
         </scene>
     </scenes>
 </document>
