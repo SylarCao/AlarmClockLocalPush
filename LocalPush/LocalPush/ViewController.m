@@ -25,18 +25,20 @@
 
 - (void)setInitialValue
 {
-    NSDateFormatter *ff = [[NSDateFormatter alloc] init];
-    ff.dateFormat = @"yyyy-MM-dd HH:mm";
-    NSDate *d1 = [ff dateFromString:@"2016-08-24 09:39"];
-    NSComparisonResult result = [d1 compare:[NSDate date]];
-    if (result == NSOrderedAscending)
-    {
-        _btnOne.hidden = YES;
-    }
-    else
-    {
-        _btnOne.hidden = NO;
-    }
+//    NSDateFormatter *ff = [[NSDateFormatter alloc] init];
+//    ff.dateFormat = @"yyyy-MM-dd HH:mm";
+//    NSDate *d1 = [ff dateFromString:@"2017-08-24 09:39"];
+//    NSComparisonResult result = [d1 compare:[NSDate date]];
+//    if (result == NSOrderedAscending)
+//    {
+//        _btnOne.hidden = YES;
+//    }
+//    else
+//    {
+//        _btnOne.hidden = NO;
+//    }
+    
+    _btnOne.hidden = YES;
 }
 
 - (IBAction)btn1:(id)sender
@@ -88,7 +90,7 @@
 
 - (NSDate *)getDate1300
 {
-    NSString *ss = @"13:08:06";
+    NSString *ss = @"13:10:10";
     NSDateFormatter *ff = [[NSDateFormatter alloc] init];
     ff.dateFormat = @"HH:mm:ss";
     NSDate *rt = [ff dateFromString:ss];
